@@ -11,10 +11,10 @@ This project makes use of a home assistant server to controll the IOT devices. I
 ## How to Setup
 __Please note that this project is not 100 percent accurate. The raspberry pi does not always push to the HASS server.__
 I installed the latest version of raspbian lite to my raspberry pi zero w and setup ssh for programming. You could also use a keyboard and a monitor directly on the Pi if that is prefered. 
-This program makes use of the Paho-MQTT library to install on the pi type 'pip3 install paho-mqtt' 
+This program makes use of the Paho-MQTT library to install on the pi type `pip3 install paho-mqtt`
 copy the test script to the pi, wire the sensor module and run the test script to make sure your sensor is working. Copy the motionSense script the pi, adjust the broker address to your HASS server and set the topic to something you will remeber. I used some formatting recomenneded in the guides I was using to learn about MQTT with python. Then you can edit your hass configuration file to setup a sensor to listen to the MQTT topic. Some more resources will be linked below that I used to setup the project.
 
 ## Resources
-[MQTT in python](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python)
-[MQTT on HASS](https://www.home-assistant.io/integrations/mqtt/)
+[MQTT in python](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python)  
+[MQTT on HASS](https://www.home-assistant.io/integrations/mqtt/)  
 [Motion sensor I used](https://www.amazon.com/gp/product/B07KBWVJMP/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
